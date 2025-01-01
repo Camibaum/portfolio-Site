@@ -28,6 +28,10 @@ img {
 /* GLOBAL --------------------------------------------------------- 
 /* HEADER */
 
+.colored a {
+  color: rgb(209, 209, 211);
+}
+
 header {
   width: 100%;
   height: 90px;
@@ -56,10 +60,16 @@ nav li {
 nav a {
   text-decoration: none;
   font-family: Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 20px;
   color: black;
   display: inline-block;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  nav a {
+    font-size: 28px;
+  }
 }
 
 /* Soft wave effect on hover */
@@ -282,11 +292,12 @@ About me text */
 /* LOCAL --------------------------------------------------------- 
 /* WEB PROJECT */
 
+/* metabeskrivelse 1 */
 .casebillede1 {
   padding: 20px;
 }
 
-.grid-container {
+.meta_grid-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -333,7 +344,7 @@ About me text */
 }
 
 @media (min-width: 768px) {
-  .grid-container {
+  .meta_grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
@@ -346,6 +357,170 @@ About me text */
   .metadata {
     margin-bottom: 2rem;
   }
+}
+
+/* metabeskrivelse2 */
+
+.meta2_grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .meta2_grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+  }
+}
+
+/* -------------------- Galleri grid_1-1 uden gap*/
+
+.galler1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 0px; /* Space between the images */
+  height: auto; /* Let the container adjust to the images' height */
+  width: 100%; /* Ensure it spans the full width */
+}
+
+.galler1 img {
+  width: 100%;
+  height: 400px; /* Fixed height */
+  object-fit: cover; /* Crop and scale the images proportionally */
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .galler1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 0px; /* Space between the images */
+    height: auto; /* Let the container adjust to the images' height */
+    width: 100%; /* Ensure it spans the full width */
+  }
+
+  .galler1 img {
+    width: 100%;
+    height: 800px; /* Fixed height */
+    object-fit: cover; /* Crop and scale the images proportionally */
+    display: block;
+  }
+}
+
+/* -------------------- Galleri grid_1-1 lang */
+
+.galler2 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 0px; /* Space between the images */
+  height: auto; /* Let the container adjust to the images' height */
+  width: 100%; /* Ensure it spans the full width */
+}
+
+.galler2 img {
+  width: 100%;
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Crop and scale the images proportionally */
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .galler2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 0px; /* Space between the images */
+    height: auto; /* Let the container adjust to the images' height */
+    width: 100%; /* Ensure it spans the full width */
+  }
+
+  .galler2 img {
+    width: 100%;
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Crop and scale the images proportionally */
+    display: block;
+  }
+}
+
+.stribe {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  height: auto; /* Container adjusts to images */
+  width: 100%; /* Full-width container */
+  overflow: hidden;
+}
+
+.stribe img {
+  width: 100%; /* Fill the container width */
+  height: 200px; /* Set fixed height */
+  object-fit: cover; /* Maintain aspect ratio and crop */
+  display: block; /* Remove inline spacing issues */
+}
+
+.stribe2 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  height: auto; /* Container adjusts to images */
+  width: 100%; /* Full-width container */
+  overflow: hidden;
+}
+
+.stribe2 img {
+  width: 100%; /* Fill the container width */
+  height: 700px; /* Set fixed height */
+  object-fit: cover; /* Maintain aspect ratio and crop */
+  display: block; /* Remove inline spacing issues */
+}
+
+/* Næste projekt  -------------------------- */
+.next {
+  height: 90px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.next-content {
+  margin: 0 auto;
+  padding: 0 12px;
+  height: 100%;
+}
+
+.next a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .next a {
+    font-size: 28px;
+  }
+}
+
+.next a:hover {
+  color: rgb(204, 204, 204);
+  animation: softWave 1s ease-in-out infinite; /* Apply soft wave animation */
 }
 
 /* ------------------------------------------------------------ // NEW PAGE -----------------------------------------------------  
@@ -363,3 +538,5 @@ About me text */
 /* ------------------------------------------------------------ // NEW PAGE -----------------------------------------------------  
 /* LOCAL --------------------------------------------------------- 
 /* CONTENT PROJECT */
+
+/* General Styles */
