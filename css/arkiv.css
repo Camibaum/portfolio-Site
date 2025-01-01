@@ -1,0 +1,23 @@
+/* filter button */
+
+/* Knapper */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-btn.active {
+  background-color: black;
+  color: white;
+}

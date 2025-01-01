@@ -1,0 +1,72 @@
+/* --------------------------------------------------------- 
+Global */
+
+.section1 {
+  margin-top: 10rem;
+}
+
+h1 {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+  font-size: 32px;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+  font-size: 28px;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 46px;
+  }
+}
+
+h3 {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+  font-size: 28px;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 46px;
+  }
+}
+
+p {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+  .beskrivelse {
+    font-size: 2rem;
+  }
+}
+
+.beskrivelse {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+/* --- arrow forsøg */
