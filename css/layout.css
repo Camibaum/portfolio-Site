@@ -188,7 +188,6 @@ Work Portfolio */
 /* --------------------------
 Portfolio grid */
 
-/* Mobile-first styles */
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr; /* One column on mobile */
@@ -199,8 +198,7 @@ Portfolio grid */
 .portfolio-item {
   position: relative;
   text-align: left;
-
-  overflow: hidden; /* Ensure no overflow */
+  overflow: hidden;
 }
 
 .portfolio-item img {
@@ -213,12 +211,13 @@ Portfolio grid */
 
 .portfolio-item p.beskrivelse {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 10px;
+  left: 10px;
   color: rgb(0, 55, 255);
-  padding: 10px;
+  padding: 7px;
   font-size: 1.5rem;
   z-index: 10;
+  /* background-color: white; */
 }
 
 /* Desktop styles */
@@ -239,8 +238,8 @@ Portfolio grid */
   }
 
   .portfolio-item p.beskrivelse {
-    bottom: 20px;
-    left: 20px;
+    bottom: 10px;
+    left: 10px;
     font-size: 2rem;
   }
 }
@@ -282,6 +281,72 @@ About me text */
 /* ------------------------------------------------------------ // NEW PAGE -----------------------------------------------------  
 /* LOCAL --------------------------------------------------------- 
 /* WEB PROJECT */
+
+.casebillede1 {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.metadata {
+  color: #888;
+}
+
+.metadata p {
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+
+.metadata p:first-line {
+  font-weight: bold;
+  color: #000;
+}
+
+.metadata strong {
+  color: #000;
+  font-weight: bold;
+}
+
+.metadata a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.metadata a:hover {
+  text-decoration: underline;
+}
+
+.description {
+  color: #000;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding-top: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .metadata {
+    margin-bottom: 2rem;
+  }
+}
 
 /* ------------------------------------------------------------ // NEW PAGE -----------------------------------------------------  
 /* LOCAL --------------------------------------------------------- 
