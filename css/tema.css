@@ -66,19 +66,6 @@
   color: #000;
 }
 
-/* tema løsning */
-.tema_løsning a {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.tema_løsning a:hover {
-  text-decoration: underline;
-}
-
 /* Tema link */
 
 .tema_link {
@@ -87,11 +74,6 @@
   font-weight: bold;
   font-family: Helvetica, sans-serif;
   color: black;
-}
-
-.tema_link:hover {
-  color: rgb(204, 204, 204); /* Change color when hovering */
-  animation: softWave 1s ease-in-out infinite; /* Apply soft wave animation */
 }
 
 /* Link animation  */
