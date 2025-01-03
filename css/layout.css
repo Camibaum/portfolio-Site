@@ -14,64 +14,13 @@ img {
 }
 
 /* --------------------------------------------------------- 
-Globale konstanter */
+Random variabler */
 
 .hide {
   display: none;
 }
 
-.mellemrum {
-  padding: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .mellemrum {
-    padding: 1.5rem;
-  }
-}
-
-.lille_pil {
-  /*customized proces link*/
-  margin-bottom: 10px;
-  width: 10px;
-  height: auto;
-}
-
-.lille_pil2 {
-  display: block; /* Ensures the image behaves like a block element */
-  margin: 0 auto; /* Centers the image horizontally */
-  margin-bottom: 10px;
-  width: 10px;
-  height: auto;
-}
-
-/* GLOBAL --------------------------------------------------------- 
-/* HEADER */
-
-header {
-  width: 100%;
-  height: 90px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 30px 20px;
-  z-index: 1000;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  /* padding: 0;
-  margin: 0; */
-}
-
-nav a {
-  display: inline-block;
-  position: relative;
-}
+/* animation hover */
 
 @keyframes softWave {
   0% {
@@ -84,6 +33,38 @@ nav a {
   100% {
     transform: translate(0, 0);
   }
+}
+
+/* --------------------------------------------------------- 
+Globale Variabler */
+
+.lille_pil {
+  width: 10px;
+  height: auto;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* HEADER + NAVIGATION */
+
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  padding: var(--spacing-columns);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  display: inline-block;
+  position: relative;
 }
 
 /* GLOBAL --------------------------------------------------------- 
