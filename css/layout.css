@@ -37,6 +37,14 @@ Globale konstanter */
   height: auto;
 }
 
+.lille_pil2 {
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+  margin-bottom: 10px;
+  width: 10px;
+  height: auto;
+}
+
 /* GLOBAL --------------------------------------------------------- 
 /* HEADER */
 
@@ -53,27 +61,16 @@ header {
   align-items: center;
 }
 
-/* Style for the navigation */
 nav ul {
   display: flex;
   justify-content: space-between;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  list-style: none;
+  /* padding: 0;
+  margin: 0; */
 }
 
 nav a {
   display: inline-block;
   position: relative;
-}
-
-@media (min-width: 768px) {
-  nav a {
-    font-size: 28px;
-  }
 }
 
 @keyframes softWave {
@@ -87,13 +84,6 @@ nav a {
   100% {
     transform: translate(0, 0);
   }
-}
-
-/* Optional: Add a slight delay between the letters */
-nav a span {
-  display: inline-block;
-  animation: softWave 4s ease-in-out; /* infinite*/
-  animation-delay: calc(0.2s * var(--i)); /* Adds delay to each letter */
 }
 
 /* GLOBAL --------------------------------------------------------- 
