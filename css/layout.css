@@ -324,11 +324,26 @@ About me text */
 .meta_grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 0.5rem;
   padding: 1.5rem;
-  max-width: 1200px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .meta_grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 2rem;
+    padding-top: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .metadata p {
+    margin: 0 0 0.2rem;
+    line-height: 1.6;
+  }
 }
 
 .metadata {
@@ -367,56 +382,45 @@ About me text */
   font-size: 1rem;
 }
 
-@media (min-width: 768px) {
-  .meta_grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    gap: 2rem;
-    padding-top: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .metadata {
-    padding: 1rem;
-    /* background-color: #f9f9f9; 
+.metadata {
+  padding: 1rem;
+  /* background-color: #f9f9f9; 
     border-radius: 8px;  */
+}
+
+.description {
+  padding: 1rem;
+}
+
+.description p {
+  margin-bottom: 1rem;
+}
+
+.view-solution {
+  align-items: center;
+  display: inline-block; /* Ensures the link has space around it */
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  color: black;
+}
+
+.view-solution:hover {
+  color: rgb(204, 204, 204); /* Change color when hovering */
+  animation: softWave 1s ease-in-out infinite; /* Apply soft wave animation */
+}
+
+/* Keyframes for the soft wave effect */
+@keyframes softWave {
+  0% {
+    transform: translate(0, 0); /* Initial position */
   }
 
-  .description {
-    padding: 1rem;
+  50% {
+    transform: translate(0, -8px); /* Move diagonally */
   }
 
-  .description p {
-    margin-bottom: 1rem;
-  }
-
-  .view-solution {
-    align-items: center;
-    display: inline-block; /* Ensures the link has space around it */
-    font-weight: bold;
-    font-family: Helvetica, sans-serif;
-    color: black;
-  }
-
-  .view-solution:hover {
-    color: rgb(204, 204, 204); /* Change color when hovering */
-    animation: softWave 1s ease-in-out infinite; /* Apply soft wave animation */
-  }
-
-  /* Keyframes for the soft wave effect */
-  @keyframes softWave {
-    0% {
-      transform: translate(0, 0); /* Initial position */
-    }
-
-    50% {
-      transform: translate(0, -8px); /* Move diagonally */
-    }
-
-    100% {
-      transform: translate(0, 0); /* Return to original position */
-    }
+  100% {
+    transform: translate(0, 0); /* Return to original position */
   }
 }
 
@@ -647,7 +651,7 @@ About me text */
 @media (min-width: 768px) {
   .largeimg {
     padding: 20px;
-    width: 1200px;
+    width: 800px;
     display: block;
     margin: 0 auto;
   }
