@@ -589,7 +589,7 @@ About me text */
 }
 
 /* NEW PAGE ------------------------------------------------------------ 
-/* Local Website page */
+/* Local - Portfolio Website */
 
 .galler_web_1 {
   padding-left: 20px;
@@ -663,8 +663,8 @@ About me text */
 }
 
 .galler_web_2 img {
-  padding: 10px;
-  border: 1px solid #ddd;
+  /* padding: 10px; */
+  /* border: 1px solid #ddd; */
   width: 100%;
   height: 100%;
   object-fit: cover;
