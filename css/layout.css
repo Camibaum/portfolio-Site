@@ -39,6 +39,10 @@ Globale konstanter */
   text-underline-offset: 5px;
 }
 
+.decoration a:hover {
+  text-decoration-color: rgb(209, 209, 211);
+}
+
 .lille_pil {
   /*customized proces link*/
   margin-bottom: 10px;
@@ -170,28 +174,32 @@ h5 {
   }
 }
 
-/* ------------------------------------------------------------ // NEW PAGE -----------------------------------------------------  
-/* LOCAL --------------------------------------------------------- 
-/* HOME */
+/* Home site Layout */
 
-/* ------------------------ 
-Hero */
+/* ------------------------------------------------ 
+Hero image */
 
 .hero_container {
   padding: 1rem;
 }
 
-/* -------------------------
-Work Portfolio */
+/* -------------------------------------------------
+KEA Projekter Filterknapper */
 
-.section1 {
+.filter_galleri {
+  margin-top: 5rem;
   text-align: center;
 }
 
-/* --------------------------
-Work Portfolio */
+@media (min-width: 768px) {
+  .filter_galleri {
+    margin-top: 10rem;
+  }
+}
 
-/* Filter buttons */
+/* -------------------------------------------------
+Knapper */
+
 .filter-buttons {
   margin: 20px 5px;
   display: flex;
@@ -220,11 +228,11 @@ Work Portfolio */
 }
 
 /* --------------------------
-Portfolio grid */
+Portfolio layout */
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: 1fr; /* One column on mobile */
+  grid-template-columns: 1fr;
   gap: 40px;
   padding: 20px;
 }
@@ -238,23 +246,39 @@ Portfolio grid */
 .portfolio-item img {
   height: 500px;
   width: auto;
-  /* width: 100%;  */
-  /* height: auto; */
   display: block;
 }
 
 .portfolio-item p.beskrivelse {
-  position: absolute;
+  /* position: absolute; placeres neden for billedet*/
   bottom: 10px;
-  left: 10px;
-  color: rgb(0, 55, 255);
-  padding: 7px;
-  font-size: 1.5rem;
+  color: black;
+  font-size: 1rem;
   z-index: 10;
-  /* background-color: white; */
 }
 
-/* Desktop styles */
+.portfolio-item p:hover {
+  color: rgb(204, 204, 204);
+  animation: softWave 1s ease-in-out infinite;
+}
+
+.portfolio-item a:hover {
+  color: rgb(204, 204, 204);
+}
+
+@keyframes softWave {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -12px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 @media (min-width: 768px) {
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -274,7 +298,7 @@ Portfolio grid */
   .portfolio-item p.beskrivelse {
     bottom: 10px;
     left: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
