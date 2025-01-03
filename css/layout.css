@@ -13,6 +13,9 @@ img {
   display: block;
 }
 
+/* --------------------------------------------------------- 
+Globale konstanter */
+
 .hide {
   display: none;
 }
@@ -28,6 +31,7 @@ img {
 }
 
 .decoration a {
+  /*customized menu link*/
   /* color: white; */
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
@@ -36,6 +40,7 @@ img {
 }
 
 .lille_pil {
+  /*customized proces link*/
   margin-bottom: 10px;
   width: 10px;
   height: auto;
@@ -88,23 +93,21 @@ nav a {
   }
 }
 
-/* Soft wave effect on hover */
 nav a:hover {
-  color: rgb(204, 204, 204); /* Change color when hovering */
-  animation: softWave 1s ease-in-out infinite; /* Apply soft wave animation */
+  color: rgb(204, 204, 204);
+  animation: softWave 1s ease-in-out infinite;
 }
 
-/* Keyframes for the soft wave effect */
 @keyframes softWave {
   0% {
-    transform: translate(0, 0); /* Initial position */
+    transform: translate(0, 0);
   }
   50% {
-    transform: translate(0, -12px); /* Move diagonally */
+    transform: translate(0, -12px);
   }
 
   100% {
-    transform: translate(0, 0); /* Return to original position */
+    transform: translate(0, 0);
   }
 }
 
@@ -197,15 +200,20 @@ Work Portfolio */
 }
 
 .filter-btn {
-  padding: 10px 20px;
+  padding: 10px 15px;
   border: 1px solid #ccc;
   background-color: #fff;
   cursor: pointer;
-  border-radius: 20px;
-  font-size: 1rem;
+  border-radius: 16px;
+  font-size: 0.8rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
+@media (min-width: 768px) {
+  .filter-btn {
+    font-size: 1rem;
+  }
+}
 .filter-btn.active {
   background-color: #000;
   color: #fff;
