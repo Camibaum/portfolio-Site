@@ -107,11 +107,17 @@ body {
 /* Moduler Mob */
 
 h1 {
-  font-size: var(--font-size-mob-xxl);
+  font-size: var(--font-size-mob-xl);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-large);
   color: var(--primary-color);
   margin-bottom: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: var(--font-size-mob-xxl);
+  }
 }
 
 h2 {
@@ -246,6 +252,14 @@ a:hover {
   /* animation: softWave 1s ease-in-out infinite; */
   text-decoration: underline;
   text-decoration-thickness: 1.6px;
+  text-decoration-color: var(--neutral-dark-color);
+  text-underline-offset: 6px;
+}
+
+.portfolio-grid a:hover .beskrivelse {
+  transition: color 0.3s ease;
+  color: var(--neutral-dark-color);
+  text-decoration: underline;
   text-decoration-color: var(--neutral-dark-color);
   text-underline-offset: 6px;
 }

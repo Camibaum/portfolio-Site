@@ -94,8 +94,8 @@ Site: Home */
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
-  padding: 20px;
+  gap: var(--spacing-columns);
+  padding: var(--spacing-xs);
 }
 
 .portfolio-item {
@@ -110,34 +110,21 @@ Site: Home */
   display: block;
 }
 
-.portfolio-item p.beskrivelse {
-  /* position: absolute; placeres neden for billedet*/
-  bottom: 10px;
-  color: black;
-  font-size: 1rem;
-  z-index: 10;
+.portfolio-grid .portfolio-item p.beskrivelse {
+  position: absolute;
+  /* z-index: 10; */
 }
 
 @media (min-width: 768px) {
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .portfolio-item {
-    padding: 0;
+    gap: var(--spacing-columns);
+    padding: var(--spacing-columns);
   }
 
   .portfolio-item img {
     width: 100%;
     height: auto;
-  }
-
-  .portfolio-item p.beskrivelse {
-    bottom: 10px;
-    left: 10px;
-    font-size: 1.5rem;
   }
 }
 
@@ -159,29 +146,28 @@ Site: 01 Website */
   }
 }
 
-/* Mobile-first: image takes up 80% of the container width */
-.colored_container {
+/* inaktiv image contwiner */
+
+/* .colored_container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* padding: var(--spacing-xs); */
 }
 
 .colored_container img {
   width: 100%;
-  max-width: 100%; /* Ensures image doesn't exceed container size */
-  height: auto; /* Maintains aspect ratio */
-  object-fit: cover; /* Optionally, ensures the image fits well */
+  max-width: 100%; 
+  height: auto; 
+  object-fit: cover;
 }
 
-/* For desktop, the image will take the full width */
 @media (min-width: 768px) {
   .colored_container img {
-    width: 50%; /* Full width on desktop */
+    width: 50%;
     padding: var(--spacing-columns);
   }
-}
+} */
 
 /* ---------------- Hero galleri */
 
@@ -361,16 +347,10 @@ Site: 01 Website */
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 1200px;
+    gap: var(--spacing-columns);
+    /* max-width: 1200px; */
     height: auto;
-  }
-
-  .galler_grid_1-1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    margin-bottom: var(--spacing-columns);
   }
 }
 
