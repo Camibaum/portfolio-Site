@@ -20,31 +20,14 @@ Random variabler */
   display: none;
 }
 
-/* animation hover */
-
-@keyframes softWave {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -12px);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-/* --------------------------------------------------------- 
-Globale Variabler */
-
 .lille_pil {
   width: 10px;
   height: auto;
   margin-bottom: var(--spacing-sm);
 }
 
-/* HEADER + NAVIGATION */
+/* --------------------------------------------------------- 
+// Footer, Header + knapper */
 
 header {
   width: 100%;
@@ -67,83 +50,185 @@ nav a {
   position: relative;
 }
 
-/* GLOBAL --------------------------------------------------------- 
-/* FOOTER */
-
-/* Mobile-first */
-.custom-footer {
-  background-color: white;
-  height: 90px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-top: 1px solid #ccc;
-}
-
-.footer-content {
-  text-decoration: none;
-  color: rgb(14, 14, 14);
-  position: relative;
+.clean-footer {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  padding: var(--spacing-columns);
 }
 
-h5 {
-  font-family: Helvetica, sans-serif;
-  font-weight: 450;
-  font-size: 1.1rem;
-  line-height: 130%;
+.footer-item {
+  text-align: center;
 }
-
-/* Desktop */
-@media (min-width: 768px) {
-  .custom-footer {
-    height: 50px;
-    padding: 5px; /* Adjust padding for desktop */
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0 12px;
-    height: 100%; /* Ensure footer content stretches to full height */
-  }
-
-  .footer-content h5 {
-    font-size: 1.4rem; /* Adjust font size for desktop */
-    margin: 0; /* Remove any default margin */
-    display: flex;
-    align-items: center; /* Vertically center the h5 */
-  }
-}
-
-/* Home site Layout */
-
-/* ------------------------------------------------ 
-Hero image */
-
-.hero_container {
-  padding: 1rem;
-}
-
-/* -------------------------------------------------
-KEA Projekter Filterknapper */
 
 .filter_galleri {
-  margin-top: 5rem;
+  margin-top: var(--spacing-xxl);
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .filter_galleri {
-    margin-top: 10rem;
+    margin-top: var(--spacing-2xxl);
   }
 }
 
-/* --------------------------
-Portfolio layout */
+/* --------------------------------------------------------- 
+Portfolio Site: 01 Website */
+
+.case_container {
+  padding: var(--spacing-columns);
+  margin-top: var(--spacing-xxl);
+}
+
+/* Hero */
+
+.hero_galleri {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+}
+
+.hero_venstre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color-04);
+  text-align: center;
+}
+
+.hero_venstre img {
+  width: 80%;
+}
+
+.hero_højre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-color);
+}
+
+.hero_højre img {
+  width: 80%;
+  max-width: 550px;
+}
+
+@media (max-width: 768px) {
+  .hero_galleri {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .hero_venstre {
+    padding: 2rem;
+  }
+}
+
+/* Tema */
+
+.tema_intro {
+  text-align: left;
+}
+
+.tema_foldud {
+  margin-left: 5px;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .tema_foldud {
+    margin: var(--spacing-xxl) var(--spacing-2xxl);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1200px;
+  }
+
+  .tema_løsning {
+    max-width: 700px;
+  }
+}
+
+.tema_meta {
+  margin-bottom: var(--spacing-columns);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* margin: 0 auto; */
+}
+
+.tema_meta p:first-line {
+  font-weight: var(--font-weight-bold-xl);
+}
+
+.tema_link {
+  line-height: var(--line-height-large);
+  align-items: center;
+  display: inline-block;
+}
+
+/* ----- ups den tager vi igen, skal ryddes op */
+
+.galler_web_1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  height: auto;
+  width: 100%;
+}
+
+.galler_web_1 img {
+  padding: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .galler_web_1 {
+    /* margin-left: 20px;
+    margin-right: 40px; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* width: 80%; */
+    max-width: 1200px;
+    height: auto;
+  }
+
+  .galler_web_1 img {
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* -------------------------stop  */
+
+.meta2_grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .meta2_grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+  }
+}
 
 .portfolio-grid {
   display: grid;
@@ -170,19 +255,6 @@ Portfolio layout */
   color: black;
   font-size: 1rem;
   z-index: 10;
-}
-
-@keyframes softWave {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -12px);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
 }
 
 @media (min-width: 768px) {
@@ -377,47 +449,6 @@ Container */
 
 /* NEW PAGE ------------------------------------------------------------ 
 /* Local - Portfolio Website */
-
-.galler_web_1 {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  height: auto;
-  width: 100%;
-}
-
-.galler_web_1 img {
-  padding: 5px;
-  border: 1px solid #ddd;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-@media (min-width: 768px) {
-  .galler_web_1 {
-    /* margin-left: 20px;
-    margin-right: 40px; */
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    /* width: 80%; */
-    max-width: 1200px;
-    height: auto;
-  }
-
-  .galler_web_1 img {
-    width: auto;
-    height: 500px;
-    object-fit: cover;
-    display: block;
-  }
-}
 
 .largeimg {
   display: grid;

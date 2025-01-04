@@ -4,6 +4,8 @@
   /* Colors */
   --primary-color: black;
   --background-color: white;
+  --neutral-color: #f9f9f9;
+  --neutral-dark-color: #c0c0c0f5;
 
   --accent-color-01: #8d1684;
   --accent-color-02: #e0cae4;
@@ -23,16 +25,11 @@
   /* Font Sizes */
   --font-size-mob-small: 0.875rem;
   --font-size-mob-base: 0.9rem;
+  --font-size-mob-base-large: 1.1rem;
   --font-size-mob-medium: 1.3rem;
   --font-size-mob-large: 1.4rem;
   --font-size-mob-xl: 2rem;
   --font-size-mob-xxl: 2.5rem;
-
-  --font-size-desk-small: 0.9rem;
-  --font-size-desk-base: 1.7rem;
-  --font-size-desk-large: 2.5rem;
-  --font-size-desk-xl: 3rem;
-  --font-size-desk-xl: 3.5rem;
 
   /* Line Heights */
   --line-height-small: 1.4rem;
@@ -46,6 +43,8 @@
   --spacing-md: 1.5rem; /* 24px */
   --spacing-lg: 2rem; /* 32px */
   --spacing-xl: 3rem; /* 48px */
+  --spacing-xxl: 5rem;
+  --spacing-2xxl: 10rem;
 
   --spacing-button-s: 0.6rem;
   --spacing-button-m: 1.1rem;
@@ -107,6 +106,15 @@ h3 {
   margin-top: var(--spacing-sm);
 }
 
+h4 {
+  font-size: var(--font-size-mob-medium);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-base);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
+}
+
 p {
   font-size: var(--font-size-mob-small);
   line-height: var(--line-height-medium);
@@ -144,6 +152,14 @@ header {
   backdrop-filter: blur(10px);
 }
 
+.clean-footer {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  font-size: var(--font-size-mob-base-large);
+  border-top: 1px solid #ccc;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .filter-btn {
   display: inline-block;
   padding: var(--spacing-button-s) var(--spacing-button-m);
@@ -168,10 +184,25 @@ a {
 
 a:hover {
   transition: color 0.3s ease;
-  color: rgb(204, 204, 204);
-  animation: softWave 1s ease-in-out infinite;
+  color: var(--neutral-dark-color);
+  /* animation: softWave 1s ease-in-out infinite; */
   text-decoration: underline;
   text-decoration-thickness: 1.6px;
-  text-decoration-color: #ccc;
+  text-decoration-color: var(--neutral-dark-color);
   text-underline-offset: 6px;
 }
+
+/* animation hover */
+
+/* @keyframes softWave {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -12px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+} */
