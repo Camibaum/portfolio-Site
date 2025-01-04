@@ -79,7 +79,60 @@ nav a {
 }
 
 /* --------------------------------------------------------- 
-Portfolio Site: 01 Website */
+Home: Portfolio */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  height: 500px;
+  width: auto;
+  display: block;
+}
+
+.portfolio-item p.beskrivelse {
+  /* position: absolute; placeres neden for billedet*/
+  bottom: 10px;
+  color: black;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .portfolio-item {
+    padding: 0;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio-item p.beskrivelse {
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------------- 
+Case Site: 01 Website */
 
 .case_container {
   padding: var(--spacing-xs);
@@ -258,55 +311,30 @@ Portfolio Site: 01 Website */
   }
 }
 
-/* -------------------------stop  */
+/* Tema galleri grid_1-1-1 */
 
-.portfolio-grid {
+.tema_galleri_tre {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-  padding: 20px;
+  grid-template-columns: 1fr; /* Mobile-first: single column */
+  gap: 1rem; /* Add spacing between items */
+  height: auto; /* Default height */
 }
 
-.portfolio-item {
-  position: relative;
-  text-align: left;
-  overflow: hidden;
+.tema_galleri_tre img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Adjust this if needed */
 }
 
-.portfolio-item img {
-  height: 500px;
-  width: auto;
-  display: block;
-}
-
-.portfolio-item p.beskrivelse {
-  /* position: absolute; placeres neden for billedet*/
-  bottom: 10px;
-  color: black;
-  font-size: 1rem;
-  z-index: 10;
-}
-
-@media (min-width: 768px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
+@media (min-width: 1024px) {
+  /* Adjust breakpoint as needed */
+  .tema_galleri_tre {
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-sized columns */
+    height: 100vh; /* Full viewport height */
   }
 
-  .portfolio-item {
-    padding: 0;
-  }
-
-  .portfolio-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  .portfolio-item p.beskrivelse {
-    bottom: 10px;
-    left: 10px;
-    font-size: 1.5rem;
+  .tema_galleri_tre img {
+    height: 100%; /* Stretch images to fit the grid cells */
   }
 }
 
