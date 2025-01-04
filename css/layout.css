@@ -159,6 +159,30 @@ Site: 01 Website */
   }
 }
 
+/* Mobile-first: image takes up 80% of the container width */
+.colored_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* padding: var(--spacing-xs); */
+}
+
+.colored_container img {
+  width: 100%;
+  max-width: 100%; /* Ensures image doesn't exceed container size */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Optionally, ensures the image fits well */
+}
+
+/* For desktop, the image will take the full width */
+@media (min-width: 768px) {
+  .colored_container img {
+    width: 50%; /* Full width on desktop */
+    padding: var(--spacing-columns);
+  }
+}
+
 /* ---------------- Hero galleri */
 
 .hero_galleri {

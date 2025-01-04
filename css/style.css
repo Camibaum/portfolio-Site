@@ -162,15 +162,16 @@ p {
 
 @media (min-width: 768px) {
   .customized_p {
-    font-size: var(--font-size-mob-xxl);
+    font-size: 65px;
+    font-weight: var(--font-weight-bold-xl);
     line-height: var(--line-height-large);
   }
 }
 
 /* Section-Specific Styles */
 #accent_match1 .venstre {
-  background-color: var(--accent-color-03);
-  color: var(--accent-color-04);
+  background-color: var(--accent-color-04);
+  color: var(--accent-color-03);
 }
 
 #accent_match1 .højre {
@@ -182,8 +183,8 @@ p {
 }
 
 #accent_match2 .højre {
-  background-color: var(--accent-color-04); /* Corrected color */
-  color: var(--accent-color-01); /* Added color change */
+  background-color: var(--accent-color-06); /* Corrected color */
+  color: var(--accent-color-05); /* Added color change */
 }
 
 /* header */
