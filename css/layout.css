@@ -26,6 +26,16 @@ Random variabler */
   margin-bottom: var(--spacing-sm);
 }
 
+.large_spacing {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .large_spacing {
+    padding: 2rem;
+  }
+}
+
 /* --------------------------------------------------------- 
 // Footer, Header + knapper */
 
@@ -78,8 +88,8 @@ nav a {
   }
 }
 
-/* --------------------------------------------------------- 
-Home: Portfolio */
+/* ------------------------------------------------------------------------ // 
+Site: Home */
 
 .portfolio-grid {
   display: grid;
@@ -133,6 +143,10 @@ Home: Portfolio */
 
 /* ------------------------------------------------------------------------ // 
 Site: 01 Website */
+
+.heroimage {
+  height: 100%;
+}
 
 .case_container {
   padding: var(--spacing-xs);
@@ -234,69 +248,57 @@ Site: 01 Website */
   display: inline-block;
 }
 
-/* temagalleri --------- (desktopfirst - fejl) */
+/* ---------------- Proces galleri */
 
-.tema_galleri {
+.proces_galleri {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  height: 100vh;
+  height: 40vh;
 }
 
-.tema_venstre {
+@media (min-width: 768px) {
+  .proces_galleri {
+    height: 100vh;
+    gap: var(--spacing-columns);
+    margin-bottom: var(--spacing-columns);
+  }
+
+  .proces_galleri + .proces_galleri {
+    margin-top: var(--spacing-columns);
+  }
+}
+
+.venstre,
+.højre {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-color);
 }
 
-.tema_venstre img {
+.venstre {
+  text-align: center;
+}
+
+.højre img {
+  width: 80%; /* Adjust as needed */
+  max-width: 500px; /* Set max width for image */
+  border-radius: 20px;
+}
+
+.venstre img {
   width: 80%;
+  border-radius: 20px;
 }
 
-/* .tema_venstre h2 {
-  font-size: 2rem;
-  line-height: 1.5;
-} */
-
-.tema_højre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--background-color);
-}
-
-.tema_højre img {
-  width: 80%;
-  max-width: 600px;
-  /* border-radius: 20px; */
-}
-
-@media (max-width: 768px) {
-  .tema_galleri {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-
-  .tema_højre img {
-    width: 100%;
-  }
-
-  .tema_venstre img {
-    width: 100%;
-  }
-
-  /* .tema_venstre {
-    padding: 2rem;
-  } */
+.proces_galleri + .proces_galleri {
+  margin-top: var(--spacing-xs);
 }
 
 /* Proces -------------- beskrivelse */
 
 .proces_grid-container {
   padding: var(--spacing-columns);
-  margin-top: var(--spacing-2xxl);
-  margin-bottom: var(--spacing-xl);
+  margin-top: var(--spacing-lg); /* Ensure space above the text column */
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -315,12 +317,12 @@ Site: 01 Website */
 /* -------------------- Galleri grid_1-1 */
 
 .galler_grid_1-1 {
-  padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
   height: auto;
   width: 100%;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-xs);
 }
 
 .galler_grid_1-1 img {
