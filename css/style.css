@@ -139,7 +139,7 @@ h3 {
 
 @media (min-width: 768px) {
   h3 {
-    font-size: var(--font-size-mob-xl);
+    font-size: var(--font-size-mob-large);
   }
 }
 
@@ -232,6 +232,42 @@ p {
 }
 
 #accent_match6 .højre {
+  background-color: var(--accent-color-02); /* Corrected color */
+  color: var(--accent-color-05); /* Added color change */
+}
+
+#accent_match7 .venstre {
+  background-color: var(--neutral-color);
+}
+
+#accent_match7 .højre {
+  background-color: var(--accent-color-02); /* Corrected color */
+  color: var(--accent-color-05); /* Added color change */
+}
+
+#accent_match8 .venstre {
+  background-color: var(--neutral-color);
+}
+
+#accent_match8 .højre {
+  background-color: var(--accent-color-02); /* Corrected color */
+  color: var(--accent-color-05); /* Added color change */
+}
+
+#accent_match9 .venstre {
+  background-color: var(--neutral-color);
+}
+
+#accent_match9 .højre {
+  background-color: var(--accent-color-02); /* Corrected color */
+  color: var(--accent-color-05); /* Added color change */
+}
+
+#accent_match10 .venstre {
+  background-color: var(--neutral-color);
+}
+
+#accent_match10 .højre {
   background-color: var(--accent-color-02); /* Corrected color */
   color: var(--accent-color-05); /* Added color change */
 }

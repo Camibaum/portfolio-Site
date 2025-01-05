@@ -315,8 +315,6 @@ Site: 01 Website */
   border-radius: 20px;
 }
 
-/* Proces -------------- beskrivelse */
-
 .proces_grid-container {
   padding: var(--spacing-columns);
   margin-top: var(--spacing-lg); /* Over text column */
@@ -382,7 +380,9 @@ Site: Animation */
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-xs);
-  padding: var(--spacing-xs);
+  padding-bottom: var(--spacing-xs);
+  padding-right: var(--spacing-xs);
+  padding-left: var(--spacing-xs);
   margin-bottom: var(--spacing-xxl);
   /* margin: var(--spacing-xs); */
 }
