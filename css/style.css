@@ -24,9 +24,9 @@
 
   /* Font Sizes */
   --font-size-mob-small: 0.875rem;
-  --font-size-mob-base: 0.9rem;
+  --font-size-mob-base: 1rem;
   --font-size-mob-base-large: 1.1rem;
-  --font-size-mob-medium: 0.9rem;
+  --font-size-mob-medium: 1.2rem; /*bruges til header*/
   --font-size-mob-large: 1.4rem;
   --font-size-mob-xl: 2rem;
   --font-size-mob-xxl: 2.5rem;
@@ -42,7 +42,7 @@
 
   --spacing-sm: 1rem; /* 16px */
   --spacing-md: 1.5rem; /* 24px */
-  --spacing-lg: 2rem; /* 32px */
+  --spacing-lg: 2.1rem; /* 32px */
   --spacing-xl: 3rem; /* 48px */
   --spacing-xxl: 5rem;
   --spacing-2xxl: 10rem;
@@ -61,8 +61,8 @@
   /* font weight */
   --font-weight-thin: 300;
   --font-weight-medium: 500;
-  --font-weight-bold: 700;
-  --font-weight-bold-xl: 900;
+  --font-weight-bold: 600;
+  --font-weight-bold-xl: 700;
 }
 
 /* ---------------------------------------------------------------- */
@@ -129,39 +129,34 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font-size-mob-large);
+  font-size: var(--font-size-mob-base-large);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-medium);
   color: var(--primary-color);
-  margin-bottom: var(--spacing-xs);
-  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+  /* margin-top: var(--spacing-sm); */
 }
 
 @media (min-width: 768px) {
   h3 {
     font-size: var(--font-size-mob-large);
+    margin-bottom: var(--spacing-xl);
   }
 }
 
-h4 {
-  font-size: var(--font-size-mob-medium);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-base);
-  color: var(--primary-color);
-  margin-bottom: var(--spacing-xs);
-  margin-top: var(--spacing-sm);
+h5 {
+  font-size: var(--font-size-mob-base);
 }
 
 p {
   font-size: var(--font-size-mob-small);
   line-height: var(--line-height-small);
   margin-bottom: var(--spacing-sm);
-  margin-top: var(--spacing-sm);
 }
 
 @media (min-width: 768px) {
   p {
-    font-size: var(--font-size-mob-medium);
+    font-size: var(--font-size-mob-small);
     line-height: var(--line-height-medium);
     margin-bottom: var(--spacing-sm);
   }
@@ -223,7 +218,7 @@ p {
 }
 
 #accent_match5 .højre {
-  background-color: var(--accent-color-02); /* Corrected color */
+  background-color: var(--accent-color-05); /* Corrected color */
   color: var(--accent-color-05); /* Added color change */
 }
 

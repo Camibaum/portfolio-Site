@@ -37,16 +37,11 @@ Random variabler */
 }
 
 .black-line {
-  width: 100%; /* Full-width line */
   height: 1px; /* Thickness of the line */
   background-color: var(--primary-color);
-  margin-bottom: var(--spacing-xs);
-}
-
-@media (min-width: 768px) {
-  .black-line {
-    margin-bottom: var(--spacing-xs);
-  }
+  margin-top: var(--spacing-xl);
+  margin-left: var(--spacing-xs);
+  margin-right: var(--spacing-xs);
 }
 
 /* --------------------------------------------------------- 
@@ -375,34 +370,14 @@ Site: 01 Website */
 /* ------------------------------------------------------------------------ // 
 Site: Animation */
 
-/* Tema-billede container */
+/* Tekst kapitel */
+
 .kapitelgrid-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-xs);
   padding-bottom: var(--spacing-xs);
   padding-right: var(--spacing-xs);
-  padding-left: var(--spacing-xs);
-  margin-bottom: var(--spacing-xxl);
-  /* margin: var(--spacing-xs); */
-}
-
-.kapitelgrid-item.image {
-  background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border-radius: 8px;  */
-  padding: var(--spacing-columns);
-  margin-bottom: var(--spacing-columns);
-}
-
-.kapitelgrid-item.image img {
-  width: 50%;
-  /* max-height: 600px; */
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px; /*i tvivl, men beholder for nu*/
+  /* padding-left: var(--spacing-xs); */
 }
 
 .kapitelgrid-item.content {
@@ -411,40 +386,17 @@ Site: Animation */
   max-width: 660px;
 }
 
-/* .kapitelgrid-item.content h2 {
-  margin-bottom: var(--spacing-sm);
-} */
-
-/* .kapitelgrid-item.content p {
-  margin-bottom: var(--spacing-columns);
-} */
-
-.read-more {
-  font-weight: var(--font-weight-bold-xl);
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-}
-
 /* Desktop Styles */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .kapitelgrid-container {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-columns);
-    align-items: start; /* start - Align content at the top for better layout */
+    align-items: start;
   }
 
   .kapitelgrid-item.content {
     max-width: 660px;
   }
-  /* 
-  .kapitelgrid-item.content {
-    font-size: 2rem;
-  } */
-
-  /* .kapitelgrid-item.content p {
-    font-size: 1.1rem;
-  } */
 }
 
 /* Sketch galleri */
