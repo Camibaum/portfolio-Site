@@ -366,6 +366,80 @@ Site: 01 Website */
 /* ------------------------------------------------------------------------ // 
 Site: Animation */
 
+/* Tema-billede container */
+.kapitelgrid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xs);
+  margin: var(--spacing-xs);
+}
+
+.kapitelgrid-item.image {
+  background-color: #f0f0f0; /* Light grey background for image container only */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 1rem; /* Space around the image */
+}
+
+.kapitelgrid-item.image img {
+  width: 80%; /* Image takes 80% of container width */
+  max-height: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.kapitelgrid-item.content {
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.kapitelgrid-item.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.kapitelgrid-item.content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.read-more {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+  .kapitelgrid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start; /* Align content at the top for better layout */
+  }
+
+  .kapitelgrid-item.content h2 {
+    font-size: 2rem;
+  }
+
+  .kapitelgrid-item.content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* third_images findes på driftpage */
+
 .third_images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
