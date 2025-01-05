@@ -26,7 +26,7 @@
   --font-size-mob-small: 0.875rem;
   --font-size-mob-base: 0.9rem;
   --font-size-mob-base-large: 1.1rem;
-  --font-size-mob-medium: 1.3rem;
+  --font-size-mob-medium: 0.9rem;
   --font-size-mob-large: 1.4rem;
   --font-size-mob-xl: 2rem;
   --font-size-mob-xxl: 2.5rem;
@@ -129,7 +129,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font-size-mob-large);
+  font-size: var(--font-size-mob-xl);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-medium);
   color: var(--primary-color);
@@ -148,13 +148,14 @@ h4 {
 
 p {
   font-size: var(--font-size-mob-small);
-  line-height: var(--line-height-medium);
+  line-height: var(--line-height-small);
   margin-bottom: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
 }
 
 @media (min-width: 768px) {
   p {
-    font-size: var(--font-size-desk-medium);
+    font-size: var(--font-size-mob-medium);
     line-height: var(--line-height-medium);
     margin-bottom: var(--spacing-sm);
   }

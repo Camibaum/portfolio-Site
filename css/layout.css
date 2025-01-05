@@ -36,6 +36,19 @@ Random variabler */
   }
 }
 
+.black-line {
+  width: 100%; /* Full-width line */
+  height: 1px; /* Thickness of the line */
+  background-color: var(--primary-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+@media (min-width: 768px) {
+  .black-line {
+    margin-bottom: var(--spacing-columns);
+  }
+}
+
 /* --------------------------------------------------------- 
 // Footer, Header + knapper */
 
@@ -270,7 +283,7 @@ Site: 01 Website */
   .proces_galleri {
     height: 100vh;
     gap: var(--spacing-columns);
-    margin-bottom: var(--spacing-columns);
+    /* margin-bottom: var(--spacing-columns); */
   }
 
   .proces_galleri + .proces_galleri {
@@ -371,74 +384,95 @@ Site: Animation */
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-xs);
-  margin: var(--spacing-xs);
+  margin-bottom: var(--spacing-xxl);
+  /* margin: var(--spacing-xs); */
 }
 
 .kapitelgrid-item.image {
-  background-color: #f0f0f0; /* Light grey background for image container only */
+  background-color: var(--neutral-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
-  padding: 1rem; /* Space around the image */
+  /* border-radius: 8px;  */
+  padding: var(--spacing-columns);
+  margin-bottom: var(--spacing-columns);
 }
 
 .kapitelgrid-item.image img {
-  width: 80%; /* Image takes 80% of container width */
-  max-height: 600px;
+  width: 50%;
+  /* max-height: 600px; */
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 8px; /*i tvivl, men beholder for nu*/
 }
 
 .kapitelgrid-item.content {
-  font-family: Arial, sans-serif;
   text-align: left;
 }
 
-.kapitelgrid-item.content h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
+/* .kapitelgrid-item.content h2 {
+  margin-bottom: var(--spacing-sm);
+} */
 
-.kapitelgrid-item.content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
+/* .kapitelgrid-item.content p {
+  margin-bottom: var(--spacing-columns);
+} */
 
 .read-more {
-  font-size: 1rem;
+  font-weight: var(--font-weight-bold-xl);
   text-decoration: none;
-  color: black;
-  font-weight: bold;
   display: inline-flex;
   align-items: center;
-}
-
-.read-more:hover {
-  text-decoration: underline;
 }
 
 /* Desktop Styles */
 @media screen and (min-width: 768px) {
   .kapitelgrid-container {
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start; /* Align content at the top for better layout */
+    gap: var(--spacing-columns);
+    align-items: start; /* start - Align content at the top for better layout */
   }
 
-  .kapitelgrid-item.content h2 {
+  /* 
+  .kapitelgrid-item.content {
     font-size: 2rem;
-  }
+  } */
 
-  .kapitelgrid-item.content p {
+  /* .kapitelgrid-item.content p {
     font-size: 1.1rem;
+  } */
+}
+
+/* Sketch galleri */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: var(--spacing-xs);
+  gap: var(--spacing-xs);
+  width: 100%;
+}
+
+.gallery-item {
+  width: 100%;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block; /* Remove inline gaps */
+  object-fit: cover;
+  /* border-radius: 4px;  */
+}
+
+@media (min-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: var(--spacing-columns);
   }
 }
 
-/* third_images findes på driftpage */
+/* ---------------------------- third_images findes på driftpage */
 
 .third_images {
   display: grid;
