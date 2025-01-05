@@ -183,6 +183,7 @@ p {
 }
 
 #accent_match1 .højre {
+  /* Website page */
   background-color: var(--neutral-color);
 }
 
@@ -191,8 +192,9 @@ p {
 }
 
 #accent_match2 .højre {
-  background-color: var(--accent-color-06); /* Corrected color */
-  color: var(--accent-color-05); /* Added color change */
+  /* Website page */
+  background-color: var(--accent-color-06);
+  color: var(--accent-color-05);
 }
 
 #accent_match3 .venstre {
@@ -200,8 +202,8 @@ p {
 }
 
 #accent_match3 .højre {
-  background-color: var(--accent-color-01); /* Corrected color */
-  color: var(--accent-color-05); /* Added color change */
+  background-color: var(--accent-color-04); /* Animation page */
+  color: var(--accent-color-05);
 }
 
 #accent_match4 .venstre {
@@ -218,8 +220,7 @@ p {
 }
 
 #accent_match5 .højre {
-  background-color: var(--accent-color-05); /* Corrected color */
-  color: var(--accent-color-05); /* Added color change */
+  background-color: var(--accent-color-07); /* Corrected color */
 }
 
 #accent_match6 .venstre {
@@ -227,8 +228,7 @@ p {
 }
 
 #accent_match6 .højre {
-  background-color: var(--accent-color-02); /* Corrected color */
-  color: var(--accent-color-05); /* Added color change */
+  background-color: var(--accent-color-01);
 }
 
 #accent_match7 .venstre {
@@ -236,8 +236,8 @@ p {
 }
 
 #accent_match7 .højre {
-  background-color: var(--accent-color-02); /* Corrected color */
-  color: var(--accent-color-05); /* Added color change */
+  background-color: var(--accent-color-09);
+  color: var(--accent-color-05);
 }
 
 #accent_match8 .venstre {
@@ -245,7 +245,7 @@ p {
 }
 
 #accent_match8 .højre {
-  background-color: var(--accent-color-02); /* Corrected color */
+  background-color: var(--accent-color-10); /* Corrected color */
   color: var(--accent-color-05); /* Added color change */
 }
 
@@ -254,8 +254,8 @@ p {
 }
 
 #accent_match9 .højre {
-  background-color: var(--accent-color-02); /* Corrected color */
-  color: var(--accent-color-05); /* Added color change */
+  background-color: var(--primary-color);
+  color: var(--accent-color-05);
 }
 
 #accent_match10 .venstre {
@@ -338,17 +338,4 @@ a:hover {
   text-underline-offset: 6px;
 }
 
-/* animation hover */
-
-/* @keyframes softWave {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -12px);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-} */
+/* animations----------------------- */
