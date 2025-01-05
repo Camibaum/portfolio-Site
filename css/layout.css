@@ -45,7 +45,7 @@ Random variabler */
 
 @media (min-width: 768px) {
   .black-line {
-    margin-bottom: var(--spacing-columns);
+    margin-bottom: var(--spacing-xs);
   }
 }
 
@@ -277,6 +277,7 @@ Site: 01 Website */
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 40vh;
+  padding-top: var(--spacing-xs);
 }
 
 @media (min-width: 768px) {
@@ -287,7 +288,7 @@ Site: 01 Website */
   }
 
   .proces_galleri + .proces_galleri {
-    margin-top: var(--spacing-columns);
+    padding-top: var(--spacing-columns);
   }
 }
 
@@ -313,15 +314,11 @@ Site: 01 Website */
   border-radius: 20px;
 }
 
-.proces_galleri + .proces_galleri {
-  margin-top: var(--spacing-xs);
-}
-
 /* Proces -------------- beskrivelse */
 
 .proces_grid-container {
   padding: var(--spacing-columns);
-  margin-top: var(--spacing-lg); /* Ensure space above the text column */
+  margin-top: var(--spacing-lg); /* Over text column */
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -384,12 +381,13 @@ Site: Animation */
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-xs);
+  padding: var(--spacing-xs);
   margin-bottom: var(--spacing-xxl);
   /* margin: var(--spacing-xs); */
 }
 
 .kapitelgrid-item.image {
-  background-color: var(--neutral-color);
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -407,7 +405,9 @@ Site: Animation */
 }
 
 .kapitelgrid-item.content {
+  padding: var(--spacing-xs);
   text-align: left;
+  max-width: 660px;
 }
 
 /* .kapitelgrid-item.content h2 {
@@ -433,6 +433,9 @@ Site: Animation */
     align-items: start; /* start - Align content at the top for better layout */
   }
 
+  .kapitelgrid-item.content {
+    max-width: 660px;
+  }
   /* 
   .kapitelgrid-item.content {
     font-size: 2rem;
@@ -472,23 +475,48 @@ Site: Animation */
   }
 }
 
-/* ---------------------------- third_images findes på driftpage */
+/* 4 billeder-galleri */
 
-.third_images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50vh;
-  height: 100%;
-  width: 100%;
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
+/* Image Fourths Container */
+.image-fourths-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem; /* Small gap for mobile */
+  padding: 1rem; /* Add padding around the section */
+}
+
+/* Image Items */
+.image-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-item img {
+  width: 100%; /* Ensure images scale to fit their container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Rounded corners */
+  object-fit: cover; /* Ensure images fill the container proportionally */
+}
+
+/* Desktop View */
 @media (min-width: 768px) {
-  .third_images {
-    grid-template-rows: 100vh;
+  .image-fourths-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 1rem; /* Increase the gap for larger screens */
   }
 }
 
-.grid-item {
+/* ---------------------------- third_images findes på driftpage */
+
+/* .grid-item {
   width: 100%;
   height: 100%;
 }
@@ -497,7 +525,7 @@ Site: Animation */
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 /* ------------------------------------------------------------------------ // 
 Site: About */

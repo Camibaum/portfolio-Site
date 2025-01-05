@@ -129,12 +129,18 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font-size-mob-xl);
+  font-size: var(--font-size-mob-large);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-medium);
   color: var(--primary-color);
   margin-bottom: var(--spacing-xs);
   margin-top: var(--spacing-sm);
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: var(--font-size-mob-xl);
+  }
 }
 
 h4 {
@@ -191,6 +197,42 @@ p {
 
 #accent_match2 .højre {
   background-color: var(--accent-color-06); /* Corrected color */
+  color: var(--accent-color-05); /* Added color change */
+}
+
+#accent_match3 .venstre {
+  background-color: var(--neutral-color);
+}
+
+#accent_match3 .højre {
+  background-color: var(--accent-color-01); /* Corrected color */
+  color: var(--accent-color-05); /* Added color change */
+}
+
+#accent_match4 .venstre {
+  background-color: var(--neutral-color);
+}
+
+#accent_match4 .højre {
+  background-color: var(--accent-color-02); /* Corrected color */
+  color: var(--accent-color-05); /* Added color change */
+}
+
+#accent_match5 .venstre {
+  background-color: var(--neutral-color);
+}
+
+#accent_match5 .højre {
+  background-color: var(--accent-color-02); /* Corrected color */
+  color: var(--accent-color-05); /* Added color change */
+}
+
+#accent_match6 .venstre {
+  background-color: var(--neutral-color);
+}
+
+#accent_match6 .højre {
+  background-color: var(--accent-color-02); /* Corrected color */
   color: var(--accent-color-05); /* Added color change */
 }
 
