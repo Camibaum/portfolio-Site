@@ -275,6 +275,7 @@ Site: 01 Website */
 
 .proces_galleri {
   display: grid;
+  gap: var(--spacing-xs);
   grid-template-columns: 1fr 1fr;
   height: 40vh;
   padding-top: var(--spacing-xs);
