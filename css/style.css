@@ -146,6 +146,10 @@ h3 {
 
 h5 {
   font-size: var(--font-size-mob-base);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-medium);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xl);
 }
 
 p {
@@ -240,31 +244,30 @@ p {
   color: var(--accent-color-05);
 }
 
-#accent_match8 .venstre {
-  background-color: var(--neutral-color);
-}
-
-#accent_match8 .højre {
-  background-color: var(--accent-color-10); /* Corrected color */
-  color: var(--accent-color-05); /* Added color change */
-}
-
 #accent_match9 .venstre {
   background-color: var(--neutral-color);
 }
 
 #accent_match9 .højre {
-  background-color: var(--primary-color);
-  color: var(--accent-color-05);
+  background-color: var(--neutral-color);
+  /* color: var(--accent-color-05);  */
 }
 
-#accent_match10 .venstre {
+#accent_match12 .venstre {
   background-color: var(--neutral-color);
 }
 
-#accent_match10 .højre {
-  background-color: var(--accent-color-02); /* Corrected color */
-  color: var(--accent-color-05); /* Added color change */
+#accent_match12 .højre {
+  background-color: var(--neutral-color);
+  /* color: var(--accent-color-05); */
+}
+
+#accent_match13 .venstre {
+  background-color: var(--neutral-color);
+}
+
+#accent_match13 .højre {
+  background-color: var(--neutral-color);
 }
 
 /* header */

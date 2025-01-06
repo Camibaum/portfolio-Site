@@ -65,7 +65,7 @@ header {
   padding: var(--spacing-xs);
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 5000;
   align-items: center;
 }
 
@@ -514,25 +514,91 @@ audio {
 /* ------------------------------------------------------------------------ // 
 Site: About */
 
-.about_section {
-  padding: 10px;
+.lottie-section {
+  background-color: var(--neutral-color);
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.lottie-container,
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-columns);
+}
+
+.lottie-container dotlottie-player {
+  height: auto;
+  max-height: 100%;
 }
 
 @media (min-width: 768px) {
-  .about_section {
-    /* height: 100vh; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    width: 100%;
-    padding: 20px;
-  }
-
-  .about_section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .lottie-container dotlottie-player {
+    width: 100%; /* Make the Lottie player take up more space on larger screens */
+    height: 100vh; /* Slightly larger height on big screens */
   }
 }
 
-/* ------------ */
+/* Tekstafsnit */
+
+.portræt-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem;
+}
+
+.portræt-item.image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* .portræt-item.content {
+  font-family: Arial, sans-serif;
+  text-align: left;
+} */
+
+.portræt-item.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* .portræt-item.content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+} */
+
+/* .read-more {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+} */
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+  .portræt-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  /* .portræt-item.content h2 {
+    font-size: 2rem;
+  } */
+  /* 
+  .portræt-item.content p {
+    font-size: 1.1rem;
+  } */
+}
