@@ -430,19 +430,12 @@ Site: Animation */
 
 /* 4 billeder-galleri */
 
-/* Section Title */
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
 /* Image Fourths Container */
 .image-fourths-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.5rem; /* Small gap for mobile */
-  padding: 1rem; /* Add padding around the section */
+  gap: var(--spacing-columns);
+  padding: var(--spacing-xs);
 }
 
 /* Image Items */
