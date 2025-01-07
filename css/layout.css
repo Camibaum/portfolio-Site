@@ -501,18 +501,19 @@ audio {
   display: none;
 }
 
-/* ---------------------------- third_images findes på driftpage */
+/* ---------------------------- film*/
 
-/* .grid-item {
-  width: 100%;
-  height: 100%;
+.film_img {
+  padding-top: var(--spacing-xs);
+  padding-bottom: var(--spacing-xs);
 }
 
-.grid-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
+@media (min-width: 768px) {
+  .film_img {
+    padding-top: var(--spacing-columns);
+    padding-bottom: var(--spacing-columns);
+  }
+}
 
 /* ------------------------------------------------------------------------ // 
 Site: About */
