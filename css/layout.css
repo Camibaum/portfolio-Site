@@ -109,7 +109,6 @@ nav a {
 
 /* ------------------------------------------------------------------------ // 
 Site: Home */
-
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -129,9 +128,9 @@ Site: Home */
   display: block;
 }
 
-.portfolio-grid .portfolio-item p.beskrivelse {
-  position: absolute;
-  /* z-index: 10; */
+.beskrivelse {
+  padding-top: var(--spacing-xs);
+  text-align: left; /* Optional, ensures alignment */
 }
 
 @media (min-width: 768px) {
@@ -139,6 +138,10 @@ Site: Home */
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-columns);
     padding: var(--spacing-columns);
+  }
+
+  .beskrivelse {
+    padding-top: var(--spacing-columns);
   }
 
   .portfolio-item img {
