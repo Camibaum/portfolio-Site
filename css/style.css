@@ -13,7 +13,7 @@
   --accent-color-03: #fa54d9;
   --accent-color-04: #e2e4c6;
 
-  --accent-color-05: #dd8461;
+  --accent-color-05: #f5cabb;
   --accent-color-06: #ccebf5;
 
   --accent-color-07: #181caf;
@@ -178,96 +178,6 @@ p {
     font-weight: var(--font-weight-bold-xl);
     line-height: var(--line-height-large);
   }
-}
-
-/* Section-Specific Styles */
-#accent_match1 .venstre {
-  background-color: var(--accent-color-04);
-  color: var(--accent-color-03);
-}
-
-#accent_match1 .højre {
-  /* Website page */
-  background-color: var(--neutral-color);
-}
-
-#accent_match2 .venstre {
-  background-color: var(--neutral-color);
-}
-
-#accent_match2 .højre {
-  /* Website page */
-  background-color: var(--accent-color-06);
-  color: var(--accent-color-05);
-}
-
-#accent_match3 .venstre {
-  background-color: var(--neutral-color);
-}
-
-#accent_match3 .højre {
-  background-color: var(--accent-color-04); /* Animation page */
-  color: var(--accent-color-05);
-}
-
-#accent_match4 .venstre {
-  background-color: var(--neutral-color);
-}
-
-#accent_match4 .højre {
-  background-color: var(--accent-color-02); /* Corrected color */
-  color: var(--accent-color-05); /* Added color change */
-}
-
-#accent_match5 .venstre {
-  background-color: var(--neutral-color);
-}
-
-#accent_match5 .højre {
-  background-color: var(--accent-color-07); /* Corrected color */
-}
-
-#accent_match6 .venstre {
-  background-color: var(--neutral-color);
-}
-
-#accent_match6 .højre {
-  background-color: var(--accent-color-01);
-}
-
-#accent_match7 .venstre {
-  background-color: var(--neutral-color);
-}
-
-#accent_match7 .højre {
-  background-color: var(--accent-color-09);
-  color: var(--accent-color-05);
-}
-
-#accent_match9 .venstre {
-  background-color: var(--neutral-color);
-}
-
-#accent_match9 .højre {
-  background-color: var(--neutral-color);
-  /* color: var(--accent-color-05);  */
-}
-
-#accent_match12 .venstre {
-  background-color: var(--neutral-color);
-}
-
-#accent_match12 .højre {
-  background-color: var(--neutral-color);
-  /* color: var(--accent-color-05); */
-}
-
-#accent_match13 .venstre {
-  background-color: var(--neutral-color);
-}
-
-#accent_match13 .højre {
-  background-color: var(--neutral-color);
 }
 
 /* header */

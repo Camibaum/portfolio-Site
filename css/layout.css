@@ -311,6 +311,7 @@ Site: 01 Website */
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--neutral-color);
 }
 
 .venstre {
@@ -320,7 +321,7 @@ Site: 01 Website */
 .højre img {
   width: 80%; /* Adjust as needed */
   max-width: 500px; /* Set max width for image */
-  border-radius: 20px;
+  border-radius: var(--spacing-button-s);
 }
 
 .venstre img {
