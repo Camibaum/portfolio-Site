@@ -40,6 +40,10 @@ Random variabler */
   padding-top: var(--spacing-xs);
 }
 
+.single_img2 {
+  padding-top: var(--spacing-columns);
+}
+
 @media (min-width: 768px) {
   .single_img {
     padding-top: var(--spacing-columns);
@@ -512,6 +516,35 @@ audio {
   .film_img {
     padding-top: var(--spacing-columns);
     padding-bottom: var(--spacing-columns);
+  }
+}
+
+/* -------------------------- Virksomhed */
+
+.virksomhed_beforeafter {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: auto;
+  width: 100%;
+  gap: var(--spacing-columns);
+  margin-top: var(--spacing-xl);
+}
+
+.virksomhed_beforeafter img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .virksomhed_beforeafter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-columns);
+    height: auto;
+    margin-bottom: var(--spacing-columns);
+    margin-top: var(--spacing-xl);
   }
 }
 
