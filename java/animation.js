@@ -23,3 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ----------
+
+const video = document.getElementById("hero-video");
+const unmuteButton = document.getElementById("unmute-button");
+
+unmuteButton.addEventListener("click", () => {
+  video.muted = false; // Unmute the video
+});

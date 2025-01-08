@@ -640,3 +640,21 @@ Site: About */
     font-size: 1.1rem;
   } */
 }
+
+/* ----------------------- Videoer */
+
+.index_hero {
+  position: relative;
+  text-align: center;
+}
+
+.index_hero img {
+  width: 100%;
+}
+
+.hero-video {
+  width: 100%;
+  object-fit: cover;
+  padding: var(--spacing-xs);
+}
+
